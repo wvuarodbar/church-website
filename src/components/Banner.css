@@ -1,0 +1,10 @@
+.banner{
+    background-color: #4caf60;
+    color: white;
+    text-align: end;
+    font-size: small;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}

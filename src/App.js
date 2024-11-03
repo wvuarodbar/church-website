@@ -6,8 +6,10 @@ import Staff from "./pages/Staff";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import Layout from './components/Layout';
 function App() {
   return (
+    <Layout>
     <Router>
       <Navbar />
       <Routes>
@@ -18,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
+    </Layout>
   );
 }
 
