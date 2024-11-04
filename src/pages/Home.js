@@ -102,7 +102,7 @@ function MapSection() {
             <div className="overlay-content">
                 <h2>Visit Us</h2>
                 <p>Our Savior Lutheran Church</p>
-                <p>123 Church St, Your Town, ST</p>
+                <p>1000 Texas St, Sulphur Springs, TX 75482</p>
                 <button 
     onClick={() => window.open(googleMapsUrl, '_blank')} 
     className="directions-button"
@@ -122,7 +122,7 @@ function MapSection() {
 function Footer() {
     return (
         <footer className="footer">
-            <p>Our Savior Lutheran Church | 123 Church St, Your Town, ST</p>
+            <p>Our Savior Lutheran Church | 1000 Texas St, Sulphur Springs, TX 75482</p>
             <p>&copy; {new Date().getFullYear()} All Rights Reserved</p>
         </footer>
     );
