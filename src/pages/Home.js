@@ -38,7 +38,10 @@ export default Home;
 import React from "react";
 import "./Home.css";
 import { useNavigate } from 'react-router-dom';
-import mapImage from '../image/church map.jpg'
+import mapImage from '../image/church map.jpg';
+import adult from '../image/adults.jpg';
+import youth from '../image/youth.jpg';
+import child from '../image/child.jpg';
 
 const googleMapsUrl = 'https://www.google.com/maps/place/Our+Savior+Lutheran+Church/@33.1241988,-95.6076265,17.5z/data=!4m6!3m5!1s0x864a2e327edde327:0x42459f751ae842a9!8m2!3d33.1231496!4d-95.6061598!16s%2Fg%2F1tfhz_5_?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D';
 
@@ -66,6 +69,31 @@ function AboutSection() {
         </section>
     );
 }
+
+function GroupCards() {
+  const groups = [
+      { title: "Children", description: "Fun and engaging activities for kids of all ages.", image: child },
+      { title: "Youth", description: "Empowering our youth through fellowship and learning.", image: youth },
+      { title: "Adults", description: "Grow in faith and community with our adult programs.", image: adult  },
+  ];
+
+  return (
+      <section className="group-cards">
+          <h2>Programs for Everyone</h2>
+          <div className="card-list">
+              {groups.map((group, index) => (
+                  <div className="card" key={index}>
+                      <img src={group.image} alt={group.title} className="card-image" />
+                      <h3>{group.title}</h3>
+                      <p>{group.description}</p>
+                  </div>
+              ))}
+          </div>
+      </section>
+  );
+}
+
+
 
 function ServiceTimes() {
   return (
@@ -136,6 +164,7 @@ function Home() {
             <AboutSection />
             <ServiceTimes />
             <MapSection />
+            <GroupCards />
             <Footer />
         </div>
     );

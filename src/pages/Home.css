@@ -295,3 +295,56 @@ body, .home {
 .directions-button:hover {
     background-color: #FFA500;
 }
+
+.group-cards {
+  padding: 2rem;
+  text-align: center;
+}
+
+.group-cards h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Space between cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.card {
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 1.5rem;
+  width: 250px; /* Set a fixed width for uniformity */
+  transition: transform 0.2s; /* Animation on hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.card-image {
+  width: 100%; /* Full width of the card */
+  height: 150px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures image fills set dimensions without distortion */
+  object-position: top; /* Aligns image to the top */
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+
+
+
+.card h3 {
+  margin: 1rem 0 0.5rem; /* Margin for title */
+  font-size: 1.5rem; /* Font size for title */
+  color: #007BFF; /* Color for headings */
+}
+
+.card p {
+  margin: 0; /* Remove default margin */
+  font-size: 1rem; /* Font size for description */
+  color: #555; /* Darker text color for description */
+}
