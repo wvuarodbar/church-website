@@ -93,7 +93,7 @@ function ServiceTimes() {
 // Map Section Component
 // Map Section Component
 function MapSection() {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   return (
     <section className="map-section">
